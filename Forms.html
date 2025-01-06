@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Alteração do título da página-->
+    <title>Prática 10</title>
+</head>
+<body>
+    
+    <!--Criação do forms com o método POST (action como placeholder para a action final)-->
+    <form action="./vamos_enviar_os_seus_dados.php" method="post">
+    
+        <!--Agrupamento dos elementos do forms dos dados pessoais-->
+        <fieldset>
+
+            <!--Título do forms dos dados pessoais-->
+            <legend>Dados Pessoais</legend>
+
+            <!--Input do Nome-->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <br>
+            <br>
+
+            <!--Input do Primeiro Apelido-->
+            <label for="apelidos">Apelidos:</label>
+            <input type="text" id="apelidos" name="apelidos">
+
+            <br>
+            <br>
+
+            <!--Input do Telefone-->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <br>
+            <br>
+
+            <!--Input da Morada-->
+            <label for="morada">Morada:</label>
+            <input type="text" id="morada" name="morada">
+
+            <br>
+            <br>
+
+            <!--Input do E-mail-->
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="mail">
+
+        </fieldset>
+        
+
+        <br>
+        <br>
+
+        <!--Agrupamento dos elementos do forms para selecionar curso-->
+        <fieldset>
+
+            <!--Título do forms para selecionar curso-->
+            <legend>Selecionar curso</legend>
+
+            <!--Checkbox para a opção curso de front end-->
+            <input type="checkbox" id="front_end" name="curso" value="front_end">
+            <label for="front_end">Curso de Front End</label>
+
+            <br>
+
+            <!--Checkbox para a opção curso de java-->
+            <input type="checkbox" id="java" name="curso" value="java">
+            <label for="java">Curso de Java</label>
+            
+            <br>
+
+            <!--Checkbox para a opção curso full stack-->
+            <input type="checkbox" id="full_stack" name="curso" value="full_stack">
+            <label for="full_stack">Curso Full Stack</label>
+
+        </fieldset>
+        
+        <br>
+        <br>
+
+        <!--Criado um input de submissão do formulário-->
+        <input type="submit" value="Submeter">
+
+    </form>
+
+</body>
+</html>
